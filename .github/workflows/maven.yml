@@ -40,10 +40,8 @@ jobs:
       with:
           name: java-app
           path: '${{ github.workspace }}/target/*.jar'
-          
-          
-   # - name: Rename the artifact
-    #  run: cp target/testdemo-1.0-SNAPSHOT.jar testalpesh.jar
+    - name: Rename the artifact
+      run: cp target/testdemo-0.0.1-SNAPSHOT.jar testalpesh.jar
 
     #- name: Save the artifact
      # uses: actions/upload-artifact@master
