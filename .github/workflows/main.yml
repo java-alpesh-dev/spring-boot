@@ -41,6 +41,9 @@ jobs:
           file-path: spring.jar
           destination-dir: '/build'
           output-file-url: 'true' # specify true
+          output-qr-url: 'true' # specify true
+    - name: Show URL
+      run: echo '${{ steps.upload.outputs.qr-url }}' # use this output
     - name: Show URL
       run: echo '${{ steps.upload.outputs.file-url }}' # use this output
 
