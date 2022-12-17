@@ -40,5 +40,8 @@ jobs:
           #file-path: target/testdemo-0.0.1-SNAPSHOT.jar
           file-path: spring.jar
           destination-dir: '/build'
+          output-file-url: 'true' # specify true
+    - name: Show URL
+      run: echo '${{ steps.upload.outputs.file-url }}' # use this output
 
   
