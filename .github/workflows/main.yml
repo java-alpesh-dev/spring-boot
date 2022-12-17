@@ -34,7 +34,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: 'ap-northeast-1'
           aws-bucket: ${{ secrets.AWS_BUCKET }}
-          file-path: /home/runner/work/spring-boot/spring-boot/target/*.jar
+          file-path: target/testdemo-0.0.1-SNAPSHOT.jar
           destination-dir: '/build'
 
   
